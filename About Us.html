@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Us</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+<style>
+	
+body{ 
+	margin: 0;
+	padding: 0;
+	font-family: 'Spirax', sans-serif;
+}	
+.dropdown-menu{
+		
+		padding: 8px;
+	}
+
+
+section {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background: #000;
+	overflow: hidden;
+	animation: bgColor 20s linear infinite;
+}
+
+			.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.button{
+	min-width: 160px;
+}
+
+.bgPulse {
+	width: 100%;
+	height: 100%;
+}
+.bgPulse span {
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	background: #fff;
+}
+.bgPulse span:nth-child(3n+1) {
+	background: transparent;
+	border: 5px solid #fff;
+}
+.bgPulse span:nth-child(1) {
+	top: 50%;
+	left: 20%;
+	animation: animate 10s linear infinite;
+}
+.bgPulse span:nth-child(2) {
+	top: 80%;
+	left: 40%;
+	animation: animate 12s linear infinite;
+}
+.bgPulse span:nth-child(3) {
+	top: 10%;
+	left: 65%;
+	animation: animate 15s linear infinite;
+}
+.bgPulse span:nth-child(4) {
+	top: 50%;
+	left: 70%;
+	animation: animate 6s linear infinite;
+}
+.bgPulse span:nth-child(5) {
+	top: 10%;
+	left: 30%;
+	animation: animate 9s linear infinite;
+}
+.bgPulse span:nth-child(6) {
+	top: 90%;
+	left: 95%;
+	animation: animate 8s linear infinite;
+}
+.bgPulse span:nth-child(7) {
+	top: 80%;
+	left: 5%;
+	animation: animate 5s linear infinite;
+}
+.bgPulse span:nth-child(8) {
+	top: 35%;
+	left: 50%;
+	animation: animate 14s linear infinite;
+}
+.bgPulse span:nth-child(9) {
+	top: 5%;
+	left: 5%;
+	animation: animate 11s linear infinite;
+}
+.bgPulse span:nth-child(10) {
+	top: 25%;
+	left: 90%;
+	animation: animate 10s linear infinite;
+}
+.bgPulse span:nth-child(10) {
+	top: 25%;
+	left: 90%;
+}
+
+@keyframes animate {
+	0% {
+		transform: scale(0) translateY(0) rotate(0deg);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(1) translateY(-100px) rotate(360deg);
+		opacity: 0;
+	}
+}
+
+@keyframes bgColor {
+	0% {
+		background: #f44336;
+	}
+	25% {
+		background: #03a9f4;
+	}
+	50% {
+		background: #9c27b0;
+	}
+	75% {
+		background: #76ff00;
+	}
+	100% {
+		background: #f44336;
+	}
+}
+
+</style>
+</head>
+<body>
+<!-- navbar -->
+	<nav class="navbar navbar-inverse" id="nav" data-spy"affix">
+		<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+				<span class="sr-only">Toggle Navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a href="index.html" class="navbar-brand">The Sweet Life</a>
+	</div>
+	<div class="collapse navbar-collapse" id="bs-nav-demo">
+	<ul class="nav navbar-nav">
+		<li><a href="#" link="active">About</a></li>
+		<li><a href="DessertsAvailable.html">Desserts Available</a></li>
+	</ul>
+	<ul class="nav navbar-nav navbar-right">
+		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact Us<i class="fa fa-address-book"><span class="caret"></span></i></a>
+			<ul class="dropdown-menu">
+				<li>&nbsp; &nbsp;<i class="fa fa-github" aria-hidden="true" fa-2x><a href="https://github.com/mahima2112"> GitHub</i></a></li>
+				<li>&nbsp; &nbsp;<i class="fa fa-linkedin" aria-hidden="true" fa-2x><a href="https://www.linkedin.com/in/mahima-chugh-7b9940156/"> LinkedIn</i></a></li>
+				<li>&nbsp; &nbsp;<i class="fa fa-envelope" aria-hidden="true" fa-2x><a href="mailto:chughmahima@gmail.com"> Gmail</i></a></li>
+			</li>
+		</ul>
+	</nav>
+<div class="content-wrapper">
+	<div class="text-wrapper">
+	<h1 align="center" style="font-family:Trattatello, fantasy" color="red"><bold> ABOUT US</bold></h1>
+	<div class="container"> 
+<h3 color="white" style="font-family:Trattatello, fantasy"><strong> Established in the year 2014, <italic>The Sweet Life</italic> is not only a dessert house, but a dream for all of us. A dream to provide quality desserts, a dream to cater all cravings for desserts. </strong></h3>
+
+<h3 color="white" style="font-family:Trattatello, fantasy"><strong>We started off as a little bakery unit in the city and today we span in various cities of the country with over 20 different centers and assured quality in every product.</strong></h3>
+</div>
+</div>
+</div>
+<div class="container">
+<button class="button"><span><a href="DessertsAvailable.html" style="color: white">Click Here!</a> </span></button>
+</div>
+	<section>
+	<div class="bgPulse">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+</section>
+	
+	
+
+
+
+</body>
+</html>
